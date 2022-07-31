@@ -16,7 +16,7 @@ terraform {
 }
 
 inputs = {
-  bucket_name = "jakefau-nxtgen-api-private-bucket"
+  bucket_name = "jakefau-nxtgen-api-lambda-code"
   versioning_status = "Enabled"
   tags = {
     terraform = true
