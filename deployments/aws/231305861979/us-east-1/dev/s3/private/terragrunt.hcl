@@ -8,14 +8,17 @@ locals {
 }
 
 terraform {
-  source = "git@github.com:terraform-aws-modules/terraform-aws-s3-bucket.git?ref=${local.environment_vars.locals.s3_version}"
+  source = "git@github.com:JakeFAU/nxtgen_modules.git//modules/s3private?ref=v0.0.1"
 }
 
 inputs = {
-  bucket = "jakefau-nxtgen-api-private-bucket"
-  acl    = "private"
-
-  versioning = {
-    enabled = true
+  bucket_name = "jakefau-nxtgen-api-private-bucket"
+  versioning_status = "Enabled"
+  tags = {
+    terraform = true
+    terragrunt = true
+    component = "s3bucket"
+    application = "nxtgen-api"
   }
+
 }
