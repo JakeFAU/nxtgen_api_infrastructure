@@ -21,7 +21,7 @@ dependency "s3bucket" {
 inputs = {
   aws_region = local.region_vars.locals.aws_region
   lambda_layer_bucket = dependency.s3bucket.outputs.s3_bucket_id
-  layer_name = "logging_layer"
+  layer_name = "ds_layer"
   tags = {
     terraform = true
     terragrunt = true
