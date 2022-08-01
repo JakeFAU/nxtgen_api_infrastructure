@@ -37,7 +37,3 @@ repos:
     rev: v0.971
     hooks:
       - id: mypy
-  - repo: https://gitlab.com/pycqa/flake8
-    rev: 4.0.1
-    hooks:
-      - id: flake8
