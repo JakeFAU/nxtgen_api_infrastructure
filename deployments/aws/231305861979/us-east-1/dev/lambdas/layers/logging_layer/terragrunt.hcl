@@ -11,7 +11,7 @@ locals {
 }
 
 terraform {
-  source = "git@github.com:JakeFAU/nxtgen_modules.git//modules/lambda_layer"
+  source = "git@github.com:JakeFAU/nxtgen_modules.git//modules/lambda_layer?ref=v0.0.3"
 }
 
 dependency "s3bucket" {

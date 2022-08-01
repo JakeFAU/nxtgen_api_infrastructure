@@ -12,7 +12,7 @@ locals {
 }
 
 terraform {
-  source = "git@github.com:JakeFAU/nxtgen_modules.git//modules/s3private?ref=v0.0.1"
+  source = "git@github.com:JakeFAU/nxtgen_modules.git//modules/s3private?ref=v0.0.3"
 }
 
 inputs = {
