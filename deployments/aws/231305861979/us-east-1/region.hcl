@@ -11,7 +11,7 @@ locals {
 
 # Generate an AWS provider block
 generate "provider" {
-  path      = "provider.tf"
+  path      = "provider_override.tf"
   if_exists = "overwrite_terragrunt"
   contents  = <<EOF
 provider "aws" {
